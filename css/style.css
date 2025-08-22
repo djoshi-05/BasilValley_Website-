@@ -254,7 +254,8 @@
 .main-header .main-box .logo-box .logo img{
   position: relative;
   display: block;
-  height: 46px;
+  height: 70px;
+  width: 100px;
   z-index: 1;
 }
 
@@ -7097,4 +7098,6 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
     width: 100%;
   }
 }
+
+
 
