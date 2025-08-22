@@ -1492,7 +1492,7 @@ body.visible-sidebar{
 
 .banner-section .slide-item h1{
   position: relative;
-  font-size: 120px;
+  font-size: 40px;
   font-weight:300;
   text-transform: none;
   line-height:1.0em;
@@ -2367,7 +2367,7 @@ body.visible-sidebar{
 .menu-section{
   position: relative;
   overflow: hidden;
-  background-color:var(--color-one);
+  background-color:var(--color-two);
 }
 
 .tabs-box{
@@ -2386,15 +2386,16 @@ body.visible-sidebar{
 
 .tabs-box .tabs-content{
   position: relative;
-  background-color:var(--color-two);
-  background-image:url(../images/background/menu-bg-paper.jpg);
+  background-color:var(--color-one);
+  /* background-image:url(../images/background/menu-bg-paper.jpg); */
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
+  border-radius: 50px;
 }
 
 .tabs-box .tabs-content:before{
-  content: '';
+  /* content: ''; */
   position: absolute;
   left: 0px;
   right: auto;
@@ -6639,7 +6640,7 @@ footer .bottom_footer .social_media li a:hover {
 
 .contact-page{
   position: relative;
-  background: var(--color-one);
+  background: var(--color-two);
 }
 
 .contact-page .loc-block.info-block {
@@ -6761,7 +6762,7 @@ footer .bottom_footer .social_media li a:hover {
 }
 
 .contact-map {
-  background-color: var(--color-one);
+  background-color: var(--color-two);
   position: relative;
 }
 
@@ -7096,3 +7097,4 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
     width: 100%;
   }
 }
+

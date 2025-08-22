@@ -1918,3 +1918,15 @@
   	}
 	
 }
+
+/* Default (100% zoom, large screens) */
+.custom-margin {
+    margin-left: 60px;
+}
+
+/* When viewport shrinks (90% zoom or smaller) */
+@media (max-width: 1500px) {
+    .custom-margin {
+        margin-left: 0;
+    }
+}

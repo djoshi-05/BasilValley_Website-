@@ -29,10 +29,10 @@
   /* #18312e in decimal RGB */
   /* --color-one: rgb(24,49,46); */
 
-  --color-one: rgb(1,104,91);
+  --color-one: rgb(21,44,41);
 
    /* #152c29 in decimal RGB */
-  --color-two: rgb(21,44,41);
+  --color-two: rgb(1,104,91);
 
   /* #a7a7a7 in decimal RGB - for gray text */
   --color-three: rgb(167,167,167);
@@ -678,7 +678,7 @@ img{
     -moz-appearance:  none;
     -ms-appearance:  none;
     appearance:  none;
-    background-image: ;
+    /* background-image: ; */
     background-position: right center;
     background-repeat: no-repeat;
     cursor: pointer;
