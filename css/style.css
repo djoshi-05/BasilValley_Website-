@@ -1177,7 +1177,8 @@ body.visible-sidebar{
 
 .info-bar .inner-box{
   position:relative;
-  background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat;
+  background:var(--color-two); 
+  /* url(../images/resource/pattern-dark.png) center top repeat; */
   padding-top: 100px;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -3231,7 +3232,7 @@ body.visible-sidebar{
 }
 
 .reserve-section.style-two .reserv-col .inner{
-  background:url(../images/resource/pattern-dark.png) repeat;
+  /* background:url(../images/resource/pattern-dark.png) repeat; */
   position: relative;
   padding: 75px 100px;
   min-height: 100%;

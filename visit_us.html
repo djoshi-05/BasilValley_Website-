@@ -188,23 +188,59 @@
     
     <!-- Hidden Bar -->
     <section class="info-bar">
-        <div class="inner-box">
-            <div class="cross-icon"><span class="far fa-close"></span></div>
-            <div class="image-box"><img src="images/resource/sidebar-image.jpg" alt="image" title=""></div>
-            <div class="logo-box"><a href="home.html" title="Restoria - Restaurants HTML Template"><img src="images/resource/sidebar-logo.png" alt="image" title="Restoria - Restaurants HTML Template"></a></div>
+    <div class="inner-box">
+        <div class="cross-icon"><span class="far fa-close"></span></div>
+        
+        <!-- Image -->
+        <div class="image-box">
+            <img src="images/resource/restaurant.jpg" alt="Basil Valley Cafe">
+        </div>
 
-            <h5>Visit Us</h5>
-            <ul class="info">
-                <li>Restoria, Arrondissement, <br> Paris 9578</li>
-                <li> <span class="ib-ttl"> Lunch Time </span>- 10.00 am – 3:30 pm </li>
-                <li><span class="ib-ttl"> Dinner Time</span> - 08.00 pm – 10:30 pm</li>
-                <li><a href="mailto:booking@domainame.com">booking@domainame.com</a></li>
-            </ul>
-            <div class="booking-info">
-                <div class="bk-no"><a href="tel:+88-123-123456">Booking: +88-123-123456</a></div>
+        <!-- Logo -->
+        <div class="logo-box">
+            <a href="home.html" title="Basil Valley Cafe">
+                <img src="images/resource/bvc5.png" style="height: 50%;width: 30%;" alt="Basil Valley Cafe Logo">
+            </a>
+        </div>
+
+        <!-- Heading -->
+        <h5>Visit Us</h5>
+        <ul class="info">
+            <li>
+                Basil Valley Cafe<br>
+                Kalavad Rd, opp. Rangoli Park, near Grace College<br>
+                Mota Mava, Rajkot, Gujarat 360005
+            </li>
+            <li>
+                <span class="ib-ttl">Hours</span> - 
+                <span style="color: rgb(230,177,95);">Monday</span> to 
+                <span style="color: rgb(230,177,95);">Sunday</span> : 8:00 AM – 11:00 PM
+            </li>
+            <li>
+                <span class="ib-ttl">Phone</span> - 
+                <a href="tel:+919099018017">+91 90990 18017</a> | 
+                <a href="tel:+919725294779">+91 97252 94779</a>
+            </li>
+            <li>
+                <a href="mailto:hello@basilvalleycafe.com">hello@basilvalleycafe.com</a>
+            </li>
+        </ul>
+
+        <!-- Booking Info -->
+        <div class="booking-info">
+            <div class="bk-no">
+                <a href="tel:+919099018017">Booking: +91 90990 18017</a>
             </div>
         </div>
-    </section>
+
+        <!-- Social Links -->
+        <ul class="social-links mt-2" style="justify-content: center;">
+            <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#" aria-label="business"><i class="fa-solid fa-briefcase"></i></a></li>
+        </ul>
+    </div>
+</section>
     <!--End Hidden Bar -->
 
     <!-- Banner Section -->
@@ -431,6 +467,58 @@
     </section>
 
    
+
+
+   <div class="why-us-two visit-why py-5">
+    <div class="row">
+        <div class="loc-block col-6 mx-auto">
+            <div class="form-side text-center">
+                <div class="title-box centered">
+                    <div class="subtitle"><span>Write to us</span></div>
+                    <h2>Message us</h2>
+                    <div class="text desc">
+                        Contact us - we aim to reply within 24 hours and are happy to help!
+                    </div>
+                </div>
+                <div class="default-form reservation-form">
+                                           <form id="contactForm">
+                            <div class="form-group">
+                                <div class="field-inner">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="field-inner">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="field-inner">
+                                    <input type="text" name="phone" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="field-inner">
+                                    <textarea name="message" placeholder="Special Request" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="theme-btn btn-style-one clearfix">
+                                    <span class="btn-wrap">
+                                        <span class="text-one">send your message</span>
+                                        <span class="text-two">send your message</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <p id="formStatus"></p>
+                        </form>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
    
    
@@ -777,6 +865,31 @@ color: #cfa56c;
 </footer>
 
 
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = {
+        name: this.name.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        message: this.message.value
+    };
+
+    try {
+        const res = await fetch("http://localhost:3000/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+
+        const data = await res.json();
+        document.getElementById("formStatus").textContent = data.message || "Message sent!";
+    } catch (err) {
+        document.getElementById("formStatus").textContent = "Error sending message";
+    }
+});
+</script>
 
 
 
