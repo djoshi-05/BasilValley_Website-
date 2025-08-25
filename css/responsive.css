@@ -33,7 +33,7 @@
 
 	/* Banner Slider Section */
 	.banner-section .slide-item h1 {
-		font-size: 100px;
+		font-size: 60px;
 	}
 
 
@@ -400,7 +400,7 @@
 
 	/* heading */
 	.banner-section .slide-item h1{
-		font-size: 60px;
+		font-size: 35px;
 	}
 
 	h1{
@@ -1635,6 +1635,7 @@
 	/* heading */
 	.banner-section .slide-item h1{
 		font-size: 40px;
+		margin-top: 40px;
 	}
 
 	h1{

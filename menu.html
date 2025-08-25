@@ -34,6 +34,65 @@
     text-align: center;
 }
 
+/* Default (desktop/tablet) - normal layout */
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;   /* normal wrapping */
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+    .buttons {
+        width: 100%;
+        overflow-x: auto;              
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .tab-buttons {
+        flex-wrap: nowrap;             
+        min-width: max-content;        
+    }
+
+    .tab-buttons li {
+        flex: 0 0 auto;                
+        white-space: nowrap;           
+        position: relative;
+        padding-right: 15px;           /* space for separator */
+    }
+
+    @media (max-width: 768px) {
+    .tab-buttons li {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        position: relative;
+        padding-right: 25px; /* space for separator image */
+    }
+
+    /* Separator as star image */
+    .tab-buttons li::after {
+        content: "";
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;   /* adjust size */
+        height: 15px;
+        background: url("/images/icons/star-element.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    /* Remove separator after last item */
+    .tab-buttons li:last-child::after {
+        content: none;
+    }
+}
+
+
+}
 
 
 </style>
@@ -44,44 +103,7 @@
 <body>
     <div class="page-wrapper">
 
-        <!-- Preloader -->
-        <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close">x</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="R" class="letters-loading">
-                                R
-                            </span>
-                            <span data-text-preloader="E" class="letters-loading">
-                                E
-                            </span>
-                            <span data-text-preloader="S" class="letters-loading">
-                                S
-                            </span>
-                            <span data-text-preloader="T" class="letters-loading">
-                                T
-                            </span>
-                            <span data-text-preloader="O" class="letters-loading">
-                                O
-                            </span>
-                            <span data-text-preloader="R" class="letters-loading">
-                                R
-                            </span>
-                            <span data-text-preloader="I" class="letters-loading">
-                                I
-                            </span>
-                            <span data-text-preloader="A" class="letters-loading">
-                                A
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Preloader End -->
+       
 
         <!-- Main Header-->
         <header class="main-header header-down">
@@ -262,9 +284,8 @@
 
         <!-- Social Links -->
         <ul class="social-links mt-2" style="justify-content: center;">
-            <li><a href="#" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="#" aria-label="business"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="https://www.instagram.com/basilvalleyrajkot" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/Basilvalleycafe/s" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
         </ul>
     </div>
 </section>
@@ -329,7 +350,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="image text-center">
-                                        <img src="images/resource/2.PNG" alt="Cool Beverages" style="width:70%;  border-radius:10px;">
+                                        <img src="images/resource/2.PNG" alt="Cool Beverages" style="width:100%;  border-radius:10px;">
                                     </div>
                                 </div>
                             </div>
@@ -340,7 +361,7 @@
                            <div class="row">
                                 <div class="col-12">
                                     <div class="image text-center">
-                                        <img src="images/resource/5.PNG" alt="Cool Beverages" style="width:70%;  border-radius:10px;">
+                                        <img src="images/resource/5.PNG" alt="Cool Beverages" style="width:100%;  border-radius:10px;">
                                     </div>
                                 </div>
                             </div>
@@ -350,7 +371,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="image text-center">
-                                        <img src="images/resource/3.PNG" alt="Cool Beverages" style="width:70%;  border-radius:10px;">
+                                        <img src="images/resource/3.PNG" alt="Cool Beverages" style="width:100%;  border-radius:10px;">
                                     </div>
                                 </div>
                             </div>
@@ -360,7 +381,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="image text-center">
-                                        <img src="images/resource/4.PNG" alt="Cool Beverages" style="width:70%;  border-radius:10px;">
+                                        <img src="images/resource/4.PNG" alt="Cool Beverages" style="width:100%;  border-radius:10px;">
                                     </div>
                                 </div>
                             </div>
@@ -370,7 +391,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="image text-center">
-                                        <img src="images/resource/6.PNG" alt="Cool Beverages" style="width:70%;  border-radius:10px;">
+                                        <img src="images/resource/6.PNG" alt="Cool Beverages" style="width:100%;  border-radius:10px;">
                                     </div>
                                 </div>
                             </div>
@@ -382,7 +403,7 @@
                     <!-- <div class="hours">During winter daily from <span class="theme_color">7:00 pm</span> to <span
                             class="theme_color">9:00 pm</span></div> -->
                     <div class="link-box">
-                        <a href="experience.html" class="theme-btn btn-style-two clearfix">
+                        <a href="book-table.html" class="theme-btn btn-style-two clearfix">
                             <span class="btn-wrap">
                                 <span class="text-one">Book A Table</span>
                                 <span class="text-two">Book A Table</span>
@@ -430,12 +451,12 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <div class="line"></div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="visit_us.html">Visit Us</a></li>
+               <ul>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="home.html">Home</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="about.html">About Us</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="menu.html">Menu</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="gallery.html">Gallery</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i><a href="visit_us.html">Visit Us</a></li>
                 </ul>
             </div>
 
