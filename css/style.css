@@ -254,9 +254,10 @@
 .main-header .main-box .logo-box .logo img{
   position: relative;
   display: block;
-  height: 70px;
-  width: 100px;
+  height: 80px;
+  width: 140px;
   z-index: 1;
+  margin-top: -20px;
 }
 
 .main-header .nav-box{
@@ -2369,7 +2370,7 @@ body.visible-sidebar{
 .menu-section{
   position: relative;
   overflow: hidden;
-  background-color:var(--color-two);
+  background-color:var(--color-one);
 }
 
 .tabs-box{
@@ -2389,22 +2390,22 @@ body.visible-sidebar{
 .tabs-box .tabs-content{
   position: relative;
   background-color:var(--color-one);
-  /* background-image:url(../images/background/menu-bg-paper.jpg); */
+  background-image:url(../images/background/menu-bg-paper.jpg);
   background-repeat: repeat;
   background-position: top center;
   background-size: cover;
-  border-radius: 50px;
+  
 }
 
 .tabs-box .tabs-content:before{
-  /* content: ''; */
+  content: '';
   position: absolute;
   left: 0px;
   right: auto;
   top: 0;
   width: 70px;
   height: 100%;
-  background-color:var(--color-two);
+  background-color:var(--color-one);
   background-image:url(../images/resource/pattern-black.png);
   background-repeat: repeat;
   background-position: top center;

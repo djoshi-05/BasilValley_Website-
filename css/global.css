@@ -127,11 +127,11 @@
 
 body {
     font-family: var(--font-family-Urbanist);
-    font-size:16px;
-    color:var(--text-color);
+    font-size: 16px;
+    color: var(--text-color);
     background: var(--color-one);
-    line-height:1.85em;
-    font-weight:400;
+    line-height: 1.85em;
+    font-weight: 400;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
