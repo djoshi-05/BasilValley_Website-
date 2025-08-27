@@ -1528,6 +1528,7 @@ body.visible-sidebar{
 
 .banner-section .slide-item .text{
   position: relative;
+  text-align: justify;
   display: block;
   font-size: 20px;
   margin-top: 30px;

@@ -255,7 +255,7 @@
                                             <div class="subtitle"><h1>Basil Valley Cafe – Where Every Moment Becomes Memorable</h1></div>
                                             <!-- <h1>Delightful Experience</h1> -->
                                             <div class="text">Experience a world of comforting flavors, premium vegetarian delights, and a café ambiance crafted for true indulgence.</div>
-                                            <div class="text"">
+                                            <div class="text">
                                                 Basil Valley Cafe is Rajkot’s premium vegetarian café, designed for those who value taste, quality, and an environment that feels like home. We bring together the art of handcrafted beverages, freshly baked desserts, and wholesome vegetarian cuisine to create an experience that is as warm as it is memorable. Every detail, from the aroma of our coffee to the elegance of our interiors, is thoughtfully curated for your comfort and joy.
 
                                             </div>
@@ -453,12 +453,12 @@
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <div class="line"></div>
-                <ul>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="home.html">Home</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="about.html">About Us</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="menu.html">Menu</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="gallery.html">Gallery</a></li>
-                    <li><i class="fa-solid fa-angle-right"></i><a href="visit_us.html">Visit Us</a></li>
+                <ul class="quick">
+                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="home.html">Home</a></span></li>
+                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="about.html">About Us</a></span></li>
+                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="menu.html">Menu</a></span></li>
+                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="gallery.html">Gallery</a></span></li>
+                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="visit_us.html">Visit Us</a></span></li>
                 </ul>
             </div>
 
@@ -480,10 +480,12 @@
                         <a href="mailto:basilvalleycafe@gmail.com">basilvalleycafe@gmail.com</a>
                     </li>
                 
-                    <li>
+                   <li>
                         <i class="fas fa-phone"></i>
-                        <a href="tel:+919099018017">+91 90990 18017&nbsp;&nbsp;</a>
-                        <a href="tel:+919725294779">| +91 97252 94779</a>
+                        <div class="contact-numbers">
+                            <a href="tel:+919099018017">+91 90990 18017</a>
+                            <a href="tel:+919725294779">| +91 97252 94779</a>
+                        </div>
                     </li>
                     
 
@@ -526,7 +528,7 @@
     </div>
 
     <!-- Bottom bar -->
-    <div class="bottom-bar">
+    <div class="bottom-bar ml-3">
         <div class="auto-container bottom-flex">
             <p>© 2025 Basil Valley Cafe. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
         </div>
@@ -554,7 +556,7 @@
     max-width: 900px;
 }
 .cta-text h3 {
-    color:  rgb(230,177,95);
+    color: rgb(230,177,95);
     font-weight: 700;
     margin: 0 0 15px;
 }
@@ -597,7 +599,7 @@
 /* Footer Columns */
 
 .footer-col a:hover{
-color:  rgb(230,177,95);
+color: #cfa56c;
 
 }
 .footer-columns {
@@ -679,7 +681,7 @@ color:  rgb(230,177,95);
 
 .footer-col ul li.address-item .address-text div {
     margin-bottom: 4px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4;
     min-height: 18px;
     display: flex;
@@ -703,6 +705,7 @@ color:  rgb(230,177,95);
 .bottom-flex p {
     color: #fff;
     margin: 0;
+    margin-left: 20px;
 }
 .bottom-flex p a {
     color: #fff;
@@ -758,6 +761,90 @@ color:  rgb(230,177,95);
     color: #cfa56c;
     font-size: 16px;
 }
+
+/* Responsive Fixes for Footer */
+
+/* Tablet and below */
+@media (max-width: 992px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 25px;
+        align-items: flex-start;
+    }
+    .footer-col {
+        max-width: 100%;
+        padding: 20px 15px;
+        text-align: left;
+    }
+    .footer-col h4 {
+        text-align: left;
+    }
+    .footer-col .quick {
+        margin: 0; /* reset unwanted spacing */
+    }
+    .footer-col .quickIcone {
+        margin: 0 8px 0 0; /* proper icon alignment */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .footer-columns {
+        align-items: flex-start;
+    }
+    .footer-col {
+        text-align: left;
+    }
+    .footer-col h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .footer-col ul li {
+        font-size: 14px;
+        gap: 10px;
+        margin: 8px 0;
+        justify-content: flex-start;
+    }
+    .footer-col ul li i {
+        font-size: 14px;
+        margin-right: 8px;
+    }
+    .quick-link-text {
+        flex: 1;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .footer-columns {
+        align-items: flex-start;
+    }
+    .footer-col {
+        padding: 15px 10px;
+        text-align: left;
+    }
+    .footer-col h4 {
+        font-size: 16px;
+        text-align: left;
+    }
+    .footer-col ul li {
+        font-size: 13px;
+        margin: 6px 0;
+        justify-content: flex-start;
+    }
+    .footer-col ul li i {
+        font-size: 13px;
+        margin-right: 6px;
+    }
+    .bottom-flex p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+
+
 
 
 </style>

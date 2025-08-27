@@ -247,10 +247,17 @@ button{
 
 p{
     line-height: 1.6em;
+    /* text-align: justify; */
 }
 
 .text{
     line-height: 1.6em;
+    text-align: justify;
+}
+
+.why-desc{
+    text-align: justify;
+    white-space: normal;
 }
 
 ::-webkit-input-placeholder{color: inherit;}
