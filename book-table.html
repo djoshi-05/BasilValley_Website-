@@ -119,25 +119,19 @@
         <!-- Hidden Bar Wrapper -->
         <div class="inner-box">
             <div class="cross-icon hidden-bar-closer"><span class="far fa-close"></span></div>
-            <div class="logo-box"><a href="index.html" title="Restoria - Restaurants HTML Template"><img src="images/resource/sidebar-logo.png" alt="image" title="Restoria - Restaurants HTML Template"></a></div>
+            <div class="logo-box"><a href="home.html" title="Restoria - Restaurants HTML Template"><img src="images/resource/bvc5.png" alt="image" width="35%"  ></a></div>
             
             <!-- .Side-menu -->
-             <div class="side-menu">
+            <div class="side-menu">
                  <ul class="navigation clearfix">
                     <li><a href="home.html">Home</a>
-                        <!-- <ul>
-                            <li><a href="https://kalanidhithemes.com/live-preview/landing-page/restoria/all-demo/Restoria-1-Minimal-Hero/home.html">Home 1 - Minimal Hero</a></li>
-                            <li><a href="home.html">Home 2 - Standard Hero</a></li>
-                            <li><a href="https://kalanidhithemes.com/live-preview/landing-page/restoria/all-demo/Restoria-3-Video-Hero/home.html">Home 3 - Video Hero</a></li>
-                            <li><a href="https://kalanidhithemes.com/live-preview/landing-page/restoria/all-demo/Restoria-4-Category-Hero/home.html">Home 4 - Category Hero</a></li>
-                            <li><a href="https://kalanidhithemes.com/live-preview/landing-page/restoria/all-demo/Restoria-5-Rollingimages-Hero-Center-Header/home.html">Home 5 - Rolling Images</a></li>
-                        </ul> -->
                     </li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="menu.html">Menu</a></li>
                     
                     <li><a href="gallery.html">Gallery </a></li>
                     <li><a href="visit_us.html">Visit Us </a></li>
+                    <li><a href="book-table.html">Book A Table </a></li>
                 </ul>
             </div><!-- /.Side-menu -->
         
@@ -330,16 +324,11 @@
 
        <div class="auto-container footer-columns">
             <!-- Quick Links -->
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <div class="line"></div>
-                <ul class="quick">
-                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="home.html">Home</a></span></li>
-                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="about.html">About Us</a></span></li>
-                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="menu.html">Menu</a></span></li>
-                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="gallery.html">Gallery</a></span></li>
-                    <li><i class="fa-solid fa-angle-right footer-icon quickIcone"></i><span class="quick-link-text"><a href="visit_us.html">Visit Us</a></span></li>
-                </ul>
+             <div class="footer-col logo-col">
+                <a href="home.html">
+                    <img src="images/resource/bvc5.png" alt="Basil Valley Cafe Logo" class="footer-logo" style="width: 120px; margin-right: 140px;">
+                </a>
+                <p class="footer-tagline" style="color: rgb(230,177,95);">Crafting moments over coffee, desserts & conversations.</p>
             </div>
 
 
@@ -458,6 +447,104 @@
 .cta-btn:hover {
     background:#fff;
      color: #0b0b0b;
+}
+
+/* CTA Responsive Styles */
+.cta-flex {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cta-flex .mt-4 {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Tablet and below */
+@media (max-width: 992px) {
+    .cta-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .cta-flex .mt-4 {
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .cta-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 40px 0;
+    }
+    
+    .cta-flex {
+        gap: 25px;
+    }
+    
+    .cta-flex .mt-4 {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .cta-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .cta-text h3 {
+        font-size: 24px;
+    }
+    
+    .cta-text p {
+        font-size: 14px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .cta-section {
+        padding: 30px 0;
+    }
+    
+    .cta-flex {
+        gap: 20px;
+    }
+    
+    .cta-flex .mt-4 {
+        gap: 10px;
+    }
+    
+    .cta-btn {
+        max-width: 250px;
+        padding: 12px 18px;
+        font-size: 13px;
+    }
+    
+    .cta-text h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .cta-text p {
+        font-size: 13px;
+    }
 }
 
 /* Brand Section */
@@ -644,6 +731,25 @@ color: #cfa56c;
 
 /* Responsive Fixes for Footer */
 
+/* Logo Responsive Styles */
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-tagline {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
 /* Tablet and below */
 @media (max-width: 992px) {
     .footer-columns {
@@ -664,6 +770,20 @@ color: #cfa56c;
     }
     .footer-col .quickIcone {
         margin: 0 8px 0 0; /* proper icon alignment */
+    }
+    
+    /* Logo adjustments for tablet */
+    .footer-logo {
+        width: 100px !important;
+        margin-right: 0 !important;
+    }
+    .logo-col {
+        align-items: center;
+        text-align: center;
+    }
+    .footer-tagline {
+        text-align: center;
+        margin-top: 12px;
     }
 }
 
@@ -693,6 +813,22 @@ color: #cfa56c;
     .quick-link-text {
         flex: 1;
     }
+    
+    /* Logo adjustments for mobile */
+    .footer-logo {
+        width: 80px !important;
+        margin-right: 0 !important;
+    }
+    .logo-col {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-tagline {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 13px;
+    }
 }
 
 /* Small mobile */
@@ -720,6 +856,23 @@ color: #cfa56c;
     .bottom-flex p {
         font-size: 12px;
         text-align: center;
+    }
+    
+    /* Logo adjustments for small mobile */
+    .footer-logo {
+        width: 70px !important;
+        margin-right: 0 !important;
+    }
+    .logo-col {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .footer-tagline {
+        text-align: center;
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 1.3;
     }
 }
 

@@ -49,6 +49,86 @@
     }
 }
 
+/* Menu Price Responsive Fixes - Only CSS, no HTML changes */
+@media (max-width: 768px) {
+    .dish-block .title.clearfix {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .dish-block .title .menu-list-line {
+        display: none;
+    }
+    
+    .dish-block .title .price {
+        align-self: flex-end;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish-block .title .ttl h6 {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    
+    .dish-block .title .price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .dish-block .title .ttl h6 {
+        font-size: 13px;
+    }
+    
+    .dish-block .title .price {
+        font-size: 13px;
+    }
+}
+
+/* Sandwiches Section - Grilled/Non-Grilled Prices in Single Line on Mobile */
+@media (max-width: 768px) {
+    #tab-5 .dish-block .title.clearfix {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    #tab-5 .dish-block .title .price {
+        margin-top: 0;
+        align-self: center;
+        font-size: 12px;
+        line-height: 1.2;
+    }
+    
+    #tab-5 .dish-block .title .price span {
+        display: inline-block;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    #tab-5 .dish-block .title.clearfix {
+        gap: 6px;
+    }
+    
+    #tab-5 .dish-block .title .price {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    #tab-5 .dish-block .title.clearfix {
+        gap: 4px;
+    }
+    
+    #tab-5 .dish-block .title .price {
+        font-size: 10px;
+    }
+}
+
 </style>
 
 
@@ -156,28 +236,27 @@
 
         <!-- Hidden Navigation Bar -->
         <section class="hidden-bar">
-            <!-- Hidden Bar Wrapper -->
-            <div class="inner-box">
-                <div class="cross-icon hidden-bar-closer"><span class="far fa-close"></span></div>
-                <div class="logo-box"><a href="index.html" title="Restoria - Restaurants HTML Template"><img
-                            src="images/resource/sidebar-logo.png" alt="image"
-                            title="Restoria - Restaurants HTML Template"></a></div>
-
-                <!-- .Side-menu -->
-                <div class="side-menu">
-                    <ul class="navigation clearfix">
-                        <li><a href="home.html">Home</a>
-                        </li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-
-                        <li><a href="gallery.html">Gallery </a></li>
-                        <li><a href="visit_us.html">Visit Us </a></li>
-                    </ul>
-                </div><!-- /.Side-menu -->
-
-            </div><!-- / Hidden Bar Wrapper -->
-        </section>
+        <!-- Hidden Bar Wrapper -->
+        <div class="inner-box">
+            <div class="cross-icon hidden-bar-closer"><span class="far fa-close"></span></div>
+            <div class="logo-box"><a href="home.html" title="Restoria - Restaurants HTML Template"><img src="images/resource/bvc5.png" alt="image" width="35%"  ></a></div>
+            
+            <!-- .Side-menu -->
+            <div class="side-menu">
+                 <ul class="navigation clearfix">
+                    <li><a href="home.html">Home</a>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    
+                    <li><a href="gallery.html">Gallery </a></li>
+                    <li><a href="visit_us.html">Visit Us </a></li>
+                    <li><a href="book-table.html">Book A Table </a></li>
+                </ul>
+            </div><!-- /.Side-menu -->
+        
+        </div><!-- / Hidden Bar Wrapper -->
+    </section>
         <!-- / Hidden Bar -->
 
         <!--Info Back Drop-->
