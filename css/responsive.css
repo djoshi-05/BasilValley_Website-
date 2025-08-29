@@ -780,6 +780,21 @@
 		padding-left: 70px;
 	}
 
+	/* menu description mobile spacing */
+	.text.desc,
+	.menu-one .menu-col .dish-block .desc,
+	.menu-card-style .menu-col .dish-block .desc,
+	.menu-two .dish-block .desc,
+	.menu-tabs .dish-block .desc{
+		text-align: justify;
+		word-spacing: 0.02em;
+		letter-spacing: normal;
+		line-height: 1.5;
+		white-space: normal;
+		overflow-wrap: break-word;
+		hyphens: auto;
+	}
+
 	.chef-selection .image-col .image-layer{
 		display: none;
 	}
@@ -1506,6 +1521,20 @@
 		padding: 30px;
 	}
 
+	/* menu description mobile spacing (small phones) */
+	.text.desc,
+	.menu-one .menu-col .dish-block .desc,
+	.menu-card-style .menu-col .dish-block .desc,
+	.menu-two .dish-block .desc,
+	.menu-tabs .dish-block .desc{
+		text-align: justify;
+		word-spacing: 0.02em;
+		letter-spacing: normal;
+		line-height: 1.55;
+		white-space: normal;
+		overflow-wrap: anywhere;
+	}
+
 	.menu-card-main .menu-card-corner.top-left,
 	.menu-card-main .menu-card-corner.top-right,
 	.menu-card-main .menu-card-corner.bottom-left,
@@ -1850,6 +1879,20 @@
 	/* menu card style */
 	.menu-card-main .top-pattern{
 		height: 200px;
+	}
+
+	/* menu description ultra-small phones */
+	.text.desc,
+	.menu-one .menu-col .dish-block .desc,
+	.menu-card-style .menu-col .dish-block .desc,
+	.menu-two .dish-block .desc,
+	.menu-tabs .dish-block .desc{
+		text-align: justify;
+		word-spacing: 0.015em;
+		letter-spacing: normal;
+		line-height: 1.6;
+		white-space: normal;
+		overflow-wrap: anywhere;
 	}
 
 	/* why us */

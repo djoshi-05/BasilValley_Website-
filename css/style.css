@@ -2653,6 +2653,7 @@ body.visible-sidebar{
 .menu-tabs .dish-block .desc a{
   color: var(--color-three);
 }
+/* paragraph rule removed via revert */
 
 .menu-section .open-timing{
   position: relative;
@@ -5986,6 +5987,7 @@ footer .bottom_footer .social_media li a:hover {
 .menu-one .menu-col .dish-block .desc a{
   color: var(--color-three);
 }
+/* paragraph rule removed via revert */
 
 
 
@@ -6230,6 +6232,7 @@ footer .bottom_footer .social_media li a:hover {
 .menu-card-style .menu-col .dish-block .desc a{
   color: var(--color-three);
 }
+/* paragraph rule removed via revert */
 
 /*** 
 
@@ -6632,6 +6635,7 @@ footer .bottom_footer .social_media li a:hover {
 .menu-two .dish-block .desc a{
   color: var(--color-three);
 }
+/* paragraph rule removed via revert */
 
 
 /*** 

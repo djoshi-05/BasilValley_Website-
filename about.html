@@ -469,12 +469,15 @@
     align-items: center;
 }
 
+
+
 .footer-logo {
     width: 120px; /* fixed width for all devices */
     height: auto; /* keeps aspect ratio */
     display: block;
     margin: 0 auto; /* center on small screens */
 }
+
 .footer-col .contact-numbers{
     margin-right: -25px;
 }
@@ -505,7 +508,6 @@
         padding: 12px 20px;
         font-size: 14px;
     }
-    
 }
 
 /* Mobile view */
@@ -762,6 +764,18 @@ color: #cfa56c;
     transition: all 0.3s ease;
 }
 
+/* Logo centering for mobile devices only (1024px and below) */
+@media (max-width: 1024px) {
+    .footer-logo {
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .logo-col {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .logo-col {
     display: flex;
     flex-direction: column;
@@ -797,13 +811,11 @@ color: #cfa56c;
     }
     
     /* Logo adjustments for tablet */
-   .footer-logo {
+    .footer-logo {
         width: 175px !important;
-        margin-left: 400px !important;
     }
     .logo-col {
         align-items: center;
-        text-align: center;
     }
     .footer-tagline {
         text-align: center;
@@ -841,11 +853,9 @@ color: #cfa56c;
     /* Logo adjustments for mobile */
     .footer-logo {
         width: 175px !important;
-        margin-left: 300px !important;
     }
     .logo-col {
         align-items: center;
-        text-align: center;
         margin-bottom: 20px;
     }
     .footer-tagline {
@@ -885,11 +895,9 @@ color: #cfa56c;
     /* Logo adjustments for small mobile */
     .footer-logo {
         width: 130px !important;
-        margin-left: 90px !important;
     }
     .logo-col {
         align-items: center;
-        text-align: center;
         margin-bottom: 15px;
     }
     .footer-tagline {
